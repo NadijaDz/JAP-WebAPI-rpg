@@ -24,7 +24,6 @@ C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Micros
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Microsoft.OpenApi.dll
-C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Newtonsoft.Json.dll
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -60,3 +59,8 @@ C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\obj\Debug\net5.0\dotnet
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\obj\Debug\net5.0\ref\dotnet-rpg.dll
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\obj\Debug\net5.0\dotnet-rpg.pdb
 C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\obj\Debug\net5.0\dotnet-rpg.genruntimeconfig.cache
+C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Scrutor.dll
+C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Nadija\Desktop\dotnet-rpg\dotnet-rpg\dotnet-rpg\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
