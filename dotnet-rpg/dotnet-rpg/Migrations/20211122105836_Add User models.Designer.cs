@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using dotnet_rpg.Data;
 
 namespace dotnet_rpg.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataContextModelSnapshot : ModelSnapshot
+    [Migration("20211122105836_Add User models")]
+    partial class AddUsermodels
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -86,11 +88,9 @@ namespace dotnet_rpg.Migrations
 
             modelBuilder.Entity("dotnet_rpg.Models.Character", b =>
                 {
-                    b.HasOne("dotnet_rpg.Models.User", "User")
+                    b.HasOne("dotnet_rpg.Models.User", null)
                         .WithMany("Characters")
                         .HasForeignKey("UserId");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("dotnet_rpg.Models.User", b =>

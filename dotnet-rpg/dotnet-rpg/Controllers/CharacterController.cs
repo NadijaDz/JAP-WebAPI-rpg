@@ -1,6 +1,7 @@
 ﻿using dotnet_rpg.Dtos.Character;
 using dotnet_rpg.Models;
 using dotnet_rpg.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_rpg.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CharacterController : ControllerBase
@@ -31,6 +33,34 @@ namespace dotnet_rpg.Controllers
         public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> GetSingle(int id)
         {
             return Ok(await _characterService.GetCharacterById(id));
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> AddCharacter(AddCharacterDto newCharacter)
+        {
+            return Ok(await _characterService.AddCharacter(newCharacter));
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<ServiceResponse<GetCharacterDto>>> UpdateCharacter(UpdateCharacterDto updatedCharacter)
+        {
+            var response = await _characterService.UpdateCharacter(updatedCharacter);
+            if (response.Data == null)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<ServiceResponse<List<GetCharacterDto>>>> Delete(int id)
+        {
+            var response = await _characterService.DeleteCharacter(id);
+            if (response.Data == null)
+            {
+                return NotFound(response);
+            }
+            return Ok(response);
         }
 
 
